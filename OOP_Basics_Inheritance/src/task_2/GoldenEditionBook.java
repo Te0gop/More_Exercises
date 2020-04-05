@@ -1,0 +1,13 @@
+package task_2;
+
+public class GoldenEditionBook extends Book {
+
+    public GoldenEditionBook(String title, String author, double price) {
+        super(title, author, price);
+    }
+
+    public double getPrice() {
+        return super.getPrice() + super.getPrice() * 0.3;
+    }
+
+}
