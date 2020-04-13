@@ -1,6 +1,6 @@
 public class Marker extends WritingMaterial {
 
-    public Marker(String color, int thickness, int weight, String brand, boolean isPermanent, boolean isWritable) {
+    public Marker(Colors color, int thickness, int weight, String brand, boolean isPermanent, boolean isWritable) {
         super(color, thickness, weight, brand, isPermanent, isWritable);
     }
 

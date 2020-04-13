@@ -1,13 +1,13 @@
 public abstract class WritingMaterial {
 
-    private String color;
+    private Colors color;
     private int thickness;
     private int weight;
     private String brand;
     private boolean isPermanent;
     private boolean isWritable;
 
-    public WritingMaterial(String color, int thickness, int weight, String brand, boolean isPermanent, boolean isWritable) {
+    public WritingMaterial(Colors color, int thickness, int weight, String brand, boolean isPermanent, boolean isWritable) {
         setColor(color);
         this.thickness = thickness;
         this.weight = weight;
@@ -16,11 +16,11 @@ public abstract class WritingMaterial {
         this.isWritable = isWritable;
     }
 
-    public String getColor() {
+    public Colors getColor() {
         return color;
     }
 
-    public void setColor(String color) {
+    public void setColor(Colors color) {
         this.color = color;
     }
 

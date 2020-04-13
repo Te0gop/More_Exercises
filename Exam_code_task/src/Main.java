@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
@@ -6,7 +7,7 @@ import java.util.stream.Collectors;
 public class Main {
 
     public static void main(String[] args) {
-        List<String> colors = Arrays.asList("red", "blue", "green", "black");
+        List<Colors> colors = new ArrayList<>(Arrays.asList(Colors.red, Colors.blue, Colors.green, Colors.black));
         List<String> brands = Arrays.asList("Copic", "Feela", "Ohuhu", "Prismacolor", "Tanmit");
 
         Random r = new Random();
@@ -27,7 +28,7 @@ public class Main {
                 .collect(Collectors.toList());
 
         for (int i = 0; i < list.size() ; i++) {
-            if(i % 2 == 0 && list.get(i).getColor().equals("blue") && list.get(i).isWritable()) {
+            if(i % 2 == 0 && list.get(i).getColor().equals(Colors.blue) && list.get(i).isWritable()) {
                 System.out.println("color: " + list.get(i).getColor() + ", brand: " + list.get(i).getBrand());
             }
         }
