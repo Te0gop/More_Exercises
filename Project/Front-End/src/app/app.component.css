@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.food {
+    margin: 10px;
+}

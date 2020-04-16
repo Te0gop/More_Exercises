@@ -1,0 +1,55 @@
+
+    <button mat-raised-button color="primary" (click) = "searchFoods()">Get foods</button>
+    <button mat-raised-button color="primary" (click) = "showAddFood()">Add food</button>
+    <button mat-raised-button color="primary" (click) = "showUpdateFood()">Update food</button>
+    <button mat-raised-button color="primary" (click) = "searchDrinks()">Get Drinks</button>
+    <button mat-raised-button color="primary" (click) = "showAddDrink()">Add drink</button>
+    <button mat-raised-button color="primary" (click) = "showUpdateDrink()">Update drink</button>
+    
+
+    <app-add-food 
+    *ngIf="addFood"
+    (addFood) = addNewFood($event)
+    ></app-add-food>
+
+    
+   <app-add-drink 
+   *ngIf="addDrink"
+   (addDrink) = addNewDrink($event)
+   ></app-add-drink>
+
+   <app-update-drinks 
+   *ngIf="updateDrink"
+   (updateDrink) = updateNewDrink($event)
+   ></app-update-drinks>
+
+   <app-update-foods 
+   *ngIf="updateFood"
+   (updateFood) = updateNewFood($event)
+   ></app-update-foods>
+
+    <div class="container">
+      <app-foods
+      class="food" 
+      *ngFor="let food of foods"
+      [foodId] = "food.id"
+      [foodName] = "food.name"
+      [foodPrice] = "food.price"
+      [expiryDate] = "food.expiryDate"
+      [manifactureName] = "food.manifactureName"
+      (deleteEvent)=deleteFood($event)
+      ></app-foods> 
+    </div>
+
+    <div class="container">
+      <app-drinks
+      class="drink" 
+      *ngFor="let drink of drinks"
+      [drinkId] = "drink.id"
+      [drinkName] = "drink.name"
+      [drinkPrice] = "drink.price"
+      [manifactureName] = "drink.manifactureName"
+      [alcoholContent] = "drink.alcoholContent"
+      (deleteEvent)=deleteDrink($event)
+      ></app-drinks>
+    </div>

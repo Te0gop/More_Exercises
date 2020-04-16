@@ -1,0 +1,18 @@
+<div style="padding: 10px">
+    <span> Food name</span>
+    <input [(ngModel)] = "food.name"> 
+</div>
+<div style="padding: 10px">
+    <span> Food price</span>
+    <input [(ngModel)] = "food.price">
+</div>
+<div style="padding: 10px">
+    <span> Food expiryDate</span>
+    <input [(ngModel)] = "food.expiryDate">
+</div>
+<div style="padding: 10px">
+    <span> manifactureName</span>
+    <input [(ngModel)] = "food.manifactureName">
+</div>
+
+<button mat-raised-button color="primary" (click) = "add()">Add</button>
