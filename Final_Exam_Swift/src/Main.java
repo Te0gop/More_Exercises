@@ -13,7 +13,7 @@ public class Main {
         list.add(cat);
         list.add(baldCat);
         list.add(bigDog);
-	list.add(fish);
+	    list.add(fish);
 
         for (int i = 0; i < list.size() ; i++) {
             if(list.get(i).getClass().getSimpleName().equals("Cat") && list.get(i).getWeight() < 5) {
