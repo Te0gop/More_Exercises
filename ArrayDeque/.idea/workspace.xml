@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="179031f3-e715-4d39-ba17-3b4e6e2cffe5" name="Default Changelist" comment="" />
+    <list default="true" id="179031f3-e715-4d39-ba17-3b4e6e2cffe5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Functional_Programming/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Functional_Programming/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Functional_Programming/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,14 +17,19 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1k5zseyYZCC7sSKyiErwJkBYO3V" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RunManager" selected="Application.MatchingBrackets">
@@ -74,6 +82,7 @@
       </list>
     </option>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -86,40 +95,6 @@
       <updated>1605005452109</updated>
     </task>
     <servers />
-  </component>
-  <component name="WindowStateProjectService">
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1605011039253">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1605011039253" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1605011039253">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1605011039253" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1605011039253">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1605011039253" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1605011039253">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1605011039253" />
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1605011039253">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1605011039253" />
-    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1605011039253">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1605011039253" />
-    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1605011039253">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1605011039253" />
-    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1605011039253">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1605011039253" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
