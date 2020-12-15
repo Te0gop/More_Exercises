@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0747e084-d5a5-4ab7-b1a9-6ad1edf63206" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Sets_And_Maps_Exercise/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AcademyGraduation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CitiesByContinentsAndCountry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ProductShop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SetsAndMaps/AverageStudentsGrades.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SetsAndMaps/AverageStudentsGrades.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,12 +31,26 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Sets_And_Maps_Exercise" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
-  <component name="RunManager" selected="Application.AverageStudentsGrades">
+  <component name="RunManager" selected="Application.AcademyGraduation">
+    <configuration name="AcademyGraduation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AcademyGraduation" />
+      <module name="SetsAndMaps" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AverageStudentsGrades" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AverageStudentsGrades" />
+      <module name="SetsAndMaps" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CitiesByContinentsAndCountry" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CitiesByContinentsAndCountry" />
       <module name="SetsAndMaps" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -45,22 +63,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParkingLot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ParkingLot" />
-      <module name="SetsAndMaps" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Party" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Party" />
-      <module name="SetsAndMaps" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="War" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="War" />
+    <configuration name="ProductShop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProductShop" />
       <module name="SetsAndMaps" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -68,11 +72,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AcademyGraduation" />
+        <item itemvalue="Application.CitiesByContinentsAndCountry" />
+        <item itemvalue="Application.ProductShop" />
         <item itemvalue="Application.AverageStudentsGrades" />
         <item itemvalue="Application.CountRealNumbers" />
-        <item itemvalue="Application.War" />
-        <item itemvalue="Application.Party" />
-        <item itemvalue="Application.ParkingLot" />
       </list>
     </recent_temporary>
   </component>
@@ -101,39 +105,5 @@
       <updated>1605180440871</updated>
     </task>
     <servers />
-  </component>
-  <component name="WindowStateProjectService">
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1605186519528">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1605186519528" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1605186519528">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1605186519528" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1605186519528">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1605186519528" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1605186519528">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1605186519528" />
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1605186519513">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1605186519513" />
-    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1605186519513">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1605186519513" />
-    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1605186519513">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1605186519513" />
-    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1605186519513">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1605186519513" />
   </component>
 </project>
