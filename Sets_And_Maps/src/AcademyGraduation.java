@@ -37,20 +37,12 @@ Pesho
             }
         }
 
-        map.forEach((key, value) -> {
-                value.stream()
-                        .mapToDouble(e -> e)
-                        .average()
-                        .stream().boxed()
-                        .forEach(avgSum -> {
-                            System.out.println(key + " is graduated with " + avgSum);
-                        });
-        });
+        map.forEach((key, value) -> value.stream()
+                .mapToDouble(e -> e)
+                .average()
+                .stream().boxed()
+                .forEach(avgSum -> System.out.println(key + " is graduated with " + avgSum)));
 
-/*
-            OptionalDouble avg = value.stream().mapToDouble(grade -> grade).average();
-                System.out.println(key + " is graduated with " + avg.getAsDouble());
- */
     }
 
 }
