@@ -1,10 +1,8 @@
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
-import java.util.concurrent.atomic.AtomicReference;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.util.stream.Collectors;
 
 public class BarIncome {
     public static void main(String[] args) {
@@ -16,7 +14,7 @@ public class BarIncome {
 
         while(!(line = scanner.nextLine()).equals("end of shift")) {
             Pattern pattern =
-                    Pattern.compile("%(?<name>[A-Z][a-z]+)%[^\\$\\.\\|%]*?<(?<product>\\w+)>[^\\$\\.\\|%]*?\\|(?<count>\\d+)\\|[^\\$\\.\\|%]*?(?<price>\\d+(\\.\\d+)?)\\$");
+                    Pattern.compile("%(?<name>[A-Z][a-z]+)%[^$.|%]*?<(?<product>\\w+)>[^$.|%]*?\\|(?<count>\\d+)\\|[^$.|%]*?(?<price>\\d+(\\.\\d+)?)\\$");
             Matcher matcher = pattern.matcher(line);
 
             while (matcher.find()) {
@@ -32,12 +30,10 @@ public class BarIncome {
         }
 
 
-        map.forEach((key, value) -> {
-           value.forEach((innerKey, innerValue) -> {
-               System.out.printf("%s: %s - %.2f%n", key, innerKey, innerValue);
-               //sum += innerValue;
-           });
-        });
+        map.forEach((key, value) -> value.forEach((innerKey, innerValue) -> {
+            System.out.printf("%s: %s - %.2f%n", key, innerKey, innerValue);
+            //sum += innerValue;
+        }));
 
         double sum = 0;
         for (Map.Entry<String, Map<String, Double>> key : map.entrySet()) {
@@ -45,6 +41,7 @@ public class BarIncome {
                 sum += s;
             }
         }
+
         System.out.printf("Total income: %.2f", sum);
 
     }
