@@ -37,7 +37,7 @@ public class Snake {
             isOutOfBounds = checkForIndexOutOfBounds(field, snakeRow, snakeCol, command);
 
             if(!isOutOfBounds) {
-               field = move(field, command, snakeRow, snakeCol, lairRow, lairCol, dimensions);
+               move(field, command, snakeRow, snakeCol, lairRow, lairCol);
             } else {
                 System.out.println("Game over!");
             }
@@ -56,17 +56,15 @@ public class Snake {
     static int snakeCol = 0;
 
     private static void printMatrix(char[][] field) {
-        for (int row = 0; row < field.length; row++) {
+        for (char[] chars : field) {
             for (int col = 0; col < field.length; col++) {
-                System.out.print(field[row][col]);
+                System.out.print(chars[col]);
             }
             System.out.println();
         }
     }
 
-    private static char[][] move(char[][] field, String command, int rows, int cols, int lairRows, int lairCols,
-                                 int dimensions) {
-        char[][] matrix = new char[dimensions][dimensions];
+    private static void move(char[][] field, String command, int rows, int cols, int lairRows, int lairCols) {
 
         switch (command) {
             case "left":
@@ -141,8 +139,6 @@ public class Snake {
                 snakeCol = cols;
                 field[rows][cols] = '.';
         }
-        matrix = field;
-        return matrix;
     }
 
     private static boolean checkForIndexOutOfBounds(char[][] field, int rows, int cols, String command) {
