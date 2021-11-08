@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0747e084-d5a5-4ab7-b1a9-6ad1edf63206" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Exam_Advanced_June/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Exam_Feb_Advanced/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Exam_Advanced_June/src/Snake.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Exam_Advanced_June/src/Snake.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="0747e084-d5a5-4ab7-b1a9-6ad1edf63206" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
