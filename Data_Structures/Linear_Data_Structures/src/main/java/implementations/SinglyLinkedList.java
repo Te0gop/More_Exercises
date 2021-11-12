@@ -61,8 +61,6 @@ public class SinglyLinkedList<E> implements LinkedList<E> {
         return value;
     }
 
-
-
     @Override
     public E removeLast() {
         ensureNotEmpty();
