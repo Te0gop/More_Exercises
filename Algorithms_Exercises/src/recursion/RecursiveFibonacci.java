@@ -14,6 +14,8 @@ package recursion;
 //Output
 //•	The output should be the nth Fibonacci number counting from 0
 
+import java.util.Scanner;
+
 //Examples
 //Input	        Output
 //5	            8
@@ -28,8 +30,12 @@ public class RecursiveFibonacci {
     }
 
     public static void main(String[] args) {
-        System.out.println(fibonacci(10)); // 89
-        System.out.println(fibonacci(50)); // This will hang!
+        Scanner scanner = new Scanner(System.in);
+        int n = Integer.parseInt(scanner.nextLine());
+
+        System.out.println(fibonacci(n));
+//        System.out.println(fibonacci(10)); // 89
+//        System.out.println(fibonacci(50)); // This will hang!
     }
 
 }
