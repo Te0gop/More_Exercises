@@ -23,7 +23,7 @@ public class NestedLoopsToRecursion {
 
         arr = new int[n];
         permute(0);
-        
+
     }
 
     private static void permute(int index) {
