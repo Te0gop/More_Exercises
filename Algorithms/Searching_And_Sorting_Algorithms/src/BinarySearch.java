@@ -19,8 +19,6 @@ public class BinarySearch {
 //        int indexOf = Integer.parseInt(scanner.nextLine());
         int indexOf = 2;
 
-
-
         System.out.println(binarySearch(arr, indexOf));
 
     }
