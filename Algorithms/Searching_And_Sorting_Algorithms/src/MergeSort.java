@@ -61,7 +61,7 @@ public class MergeSort {
                 arr[i] = helper[left++];
             } else if (helper[left] < helper[right]) {
                 arr[i] = helper[left++];
-            } else if (helper[right] < helper[left]) {
+            } else {
                 arr[i] = helper[right++];
             }
         }
