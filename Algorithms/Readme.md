@@ -1,4 +1,20 @@
-# Data Structure:
+# Big O Notation Complexity:
+```
+|---------------------------------------------------|
+|Notation          |          Complexity            |
+|---------------------------------------------------|
+|O(1)              |          Constant              |
+|O(log(n))         |          Logarithmic           |
+|O(n)              |          Linear                |
+|O(n*log(n))       |          n * log(n)            | 
+|O(n²)             |          Quadratic             |
+|O(n3)             |          Cubic                 |
+|O(2n)             |          Exponential           |
+|O(n!)             |          Factorial             |
+|---------------------------------------------------|
+```
+
+# Big O Notation for Data Structures:
 ```
 |--------------------------------------------------------------------------------------|
 |Data Structure    |          Average cases            |          Worst cases          |
@@ -13,7 +29,7 @@
 |--------------------------------------------------------------------------------------|
 ```
 
-# Sorting Algorithms:
+# Big O Notation for Sorting Algorithms:
 ```
 |--------------------------------------------------------------------------------------|
 |Algorithm         |       Best cases    |    Average cases    |    Worst cases        |
