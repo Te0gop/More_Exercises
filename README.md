@@ -1,1 +1,2 @@
-# Exercising fundamental skills to becoming java developer
+# Java Exercises
+Exercising fundamental skills to become java developer
