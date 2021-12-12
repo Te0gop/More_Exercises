@@ -1,2 +1,1 @@
-# More_Exercises
-More exercises
+# Exercising fundamental skills to becoming java developer
