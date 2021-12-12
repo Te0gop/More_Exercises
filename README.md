@@ -1,2 +1,2 @@
-# Java Fundamental Exercises
-Exercising fundamental skills to become java developer :)
+# Java Essentials :heavy_check_mark:
+Exercising fundamental skills to become java developer 😀
