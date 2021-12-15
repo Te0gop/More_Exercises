@@ -34,23 +34,17 @@ public class RecursiveDrawing {
         if(n == 0) {
             return;
         }
+
+        printSymbol('*', n);
+        recursiveDraw(n - 1);
+        printSymbol('#', n);
+    }
+
+    private static void printSymbol(char symbol, int n) {
         for (int i = 0; i < n; i++) {
             System.out.print("*");
         }
         System.out.println();
-
-        recursiveDraw(n - 1);
-        recursiveDrawHashtags(n);
     }
 
-    private static void recursiveDrawHashtags(int n) {
-        int index = 0;
-        if(n == index) {
-            System.out.println();
-            return;
-        }
-
-        System.out.print("#");
-        recursiveDrawHashtags(n - 1);
-    }
 }
