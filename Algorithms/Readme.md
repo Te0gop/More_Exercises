@@ -83,9 +83,9 @@ Output is: A, B, D, C, E, F
 3.	BFS is more suitable for searching vertices which       DFS is more suitable when there are solutions away from source.
         are closer to the given source.	                        
                                                                 
-4.	BFS considers all neighbors first and therefore         DFS is more suitable for game or puzzle problems. We make a decision, 
-        not suitable for decision making trees used in          then explore all paths through this decision. And if this decision
-        games or puzzles.	                                leads to win situation, we stop.
+4.	BFS considers all neighbors first and therefore         DFS is more suitable for game or puzzle problems. We make a  
+        not suitable for decision making trees used in          decision, then explore all paths through this decision. 
+        games or puzzles.	                                And if this decision leads to win situation, we stop.
                                                                  
 5.	The Time complexity of BFS is O(V + E) when             The Time complexity of DFS is also O(V + E) when Adjacency List is  
         Adjacency List is used and O(V^2) when Adjacency        used and O(V^2) when Adjacency Matrix is used, where V stands for 
