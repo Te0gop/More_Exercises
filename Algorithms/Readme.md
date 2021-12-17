@@ -69,21 +69,20 @@ Output is: A, B, D, C, E, F
 
 # BFS vs DFS
 ```
-BFS	                                                        DFS
+        BFS	                                                DFS
 1.	BFS stands for Breadth First Search.	                DFS stands for Depth First Search.
 
-2.	BFS(Breadth First Search) uses Queue 
-
-        data structure for finding the shortest path.	        DFS(Depth First Search) uses Stack data structure.
-3.	BFS can be used to find single source shortest
-        path in an unweighted graph, because in BFS, 
+2.	BFS(Breadth First Search) uses Queue                    DFS(Depth First Search) uses Stack data structure.
+        data structure for finding the shortest path.
+        	       
+3.	BFS can be used to find single source shortest          In DFS, we might traverse through more edges to reach
+        path in an unweighted graph, because in BFS,            a destination vertex from a source.
         we reach a vertex with minimum number of edges 
         from a source vertex.	
                                         
-3.	BFS is more suitable for searching vertices which       In DFS, we might traverse through more edges to reach 
-        are closer to the given source.	                        a destination vertex from a source. DFS is more suitable
-                                                                when there are solutions away from source.
-        
+3.	BFS is more suitable for searching vertices which       DFS is more suitable when there are solutions away from source.
+        are closer to the given source.	                        
+                                                                
 4.	BFS considers all neighbors first and therefore         DFS is more suitable for game or puzzle problems. We make a decision, 
         not suitable for decision making trees used in          then explore all paths through this decision. And if this decision
         games or puzzles.	                                leads to win situation, we stop.
