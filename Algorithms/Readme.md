@@ -43,7 +43,7 @@
 |--------------------------------------------------------------------------------------|
 ```
 # Trees and Graphs Traversal Algorithms:
-# Breadth-first Search:
+# Breadth-first search:
 BFS is a vertex based technique for finding a shortest path in graph. It uses a Queue data structure which follows first in first out. In BFS, one vertex is selected at a time when it is visited and marked then its adjacent are visited and stored in the queue. It is slower than DFS.
 ```
         A
@@ -55,3 +55,14 @@ BFS is a vertex based technique for finding a shortest path in graph. It uses a 
 Output is: A, B, C, D, E, F
 ```
 
+# Depth-first search:
+DFS is a edge based technique. It uses Stack data structure, performs two stages, first visited vertices are pushed into stack and second if theres is no vertices then visited vertices are popped.
+```
+        A
+       / \
+      B   C
+     /   / \
+    D   E   F
+ 
+Output is: A, B, D, C, E, F
+```
