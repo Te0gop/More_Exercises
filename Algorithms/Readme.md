@@ -87,9 +87,9 @@ Output is: A, B, D, C, E, F
         not suitable for decision making trees used in          then explore all paths through this decision. And if this decision
         games or puzzles.	                                leads to win situation, we stop.
                                                                  
-5.	The Time complexity of BFS is O(V + E) when             The Time complexity of DFS is also O(V + E) when Adjacency List is used and 
-        Adjacency List is used and O(V^2) when Adjacency        O(V^2) when Adjacency Matrix is used, where V stands for vertice
-        Matrix is used, where V stands for vertices and E       s and E stands for edges.
+5.	The Time complexity of BFS is O(V + E) when             The Time complexity of DFS is also O(V + E) when Adjacency List is  
+        Adjacency List is used and O(V^2) when Adjacency        used and O(V^2) when Adjacency Matrix is used, where V stands for 
+        Matrix is used, where V stands for vertices and E       vertices and E stands for edges.
         stands for edges.	       
         
 6.	Here, siblings are visited before the children	        Here, children are visited before the siblings
