@@ -42,7 +42,6 @@ public class AreasInMatrix {
         matrix = new char[rows][];
         visited = new boolean[rows][];
 
-
         for (int i = 0; i < rows; i++) {
             matrix[i] = scanner.nextLine().toCharArray();
             visited[i] = new boolean[matrix[i].length];
@@ -60,11 +59,12 @@ public class AreasInMatrix {
 
         Map<Character, Integer> areas = new TreeMap<>();
 
-
         for (int i = 0; i < graph.size(); i++) {
             if(!visitedNode[i]) {
                 Edge edge = graph.get(i);
                 char key = matrix[edge.source[0]][edge.source[1]];
+
+                // We put the number of areas as value in the map. The key is char (example: 'a').
                 areas.putIfAbsent(key, 0);
                 areas.put(key, areas.get(key) + 1);
                 bfs(i);
@@ -78,16 +78,20 @@ public class AreasInMatrix {
     }
 
     private static void bfs(int source) {
+        // To implement breadth-first search we use queue
         Deque<Integer> queue = new ArrayDeque<>();
 
+        // source = 0, 1, 2, 3 ..... 47
         queue.offer(source);
         visitedNode[source] = true;
 
         while (!queue.isEmpty()) {
             int node = queue.poll();
+
+            // We get the node of graph to see his destination
             Edge edge = graph.get(node);
 
-
+            // If destination of edge is null we break the loop and start to search in other area.
             if(edge.dest != null) {
                 visitedNode[node + 1] = true;
 
@@ -103,6 +107,7 @@ public class AreasInMatrix {
         Edge edge = new Edge(row, col);
         graph.add(edge);
 
+        // The bottom of recursion is in the conditions of statements.
         if(isInOfBounds(row, col + 1) && !visited[row][col + 1] && matrix[row][col + 1] == areaSymbol) {
             graph.get(graph.size() - 1).setDest(row, col + 1);
             dfs(row, col + 1, areaSymbol);
@@ -119,7 +124,6 @@ public class AreasInMatrix {
             graph.get(graph.size() - 1).setDest(row - 1, col);
             dfs(row - 1, col, areaSymbol);
         }
-
     }
 
     private static boolean isInOfBounds(int row, int col) {
