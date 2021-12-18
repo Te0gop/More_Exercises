@@ -64,7 +64,7 @@ public class AreasInMatrix {
         for (int i = 0; i < graph.size(); i++) {
             if(!visitedNode[i]) {
                 Edge edge = graph.get(i);
-                char key = AreasInMatrix.matrix[edge.source[0]][edge.source[1]];
+                char key = matrix[edge.source[0]][edge.source[1]];
                 areas.putIfAbsent(key, 0);
                 areas.put(key, areas.get(key) + 1);
                 bfs(i);
