@@ -32,14 +32,14 @@ public class Salaries {
 
     public static List<List<Integer>> graph = new ArrayList<>();
 
-    public static int[] salaries;
+    public static long[] salaries;
     public static boolean[] visited;
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         int employees = Integer.parseInt(scanner.nextLine());
-        salaries = new int[employees];
+        salaries = new long[employees];
         visited = new boolean[employees];
 
         int[] managersCount = new int[employees];
@@ -68,7 +68,7 @@ public class Salaries {
         for (Integer source : sources) {
             dfs(source);
         }
-        int sum = Arrays.stream(salaries).sum();
+        long sum = Arrays.stream(salaries).sum();
         System.out.println(sum);
     }
 
@@ -82,15 +82,15 @@ public class Salaries {
             if(!visited[child]) {
                 dfs(child);
 
-                int sum = graph.get(child).stream()
-                        .mapToInt(c -> salaries[c])
+                long sum = graph.get(child).stream()
+                        .mapToLong(c -> salaries[c])
                         .sum();
 
                 salaries[child] = sum == 0 ? 1 : sum;
             }
         }
-        int sum = graph.get(node).stream()
-                .mapToInt(c -> salaries[c])
+        long sum = graph.get(node).stream()
+                .mapToLong(c -> salaries[c])
                 .sum();
 
         salaries[node] = sum == 0 ? 1 : sum;
