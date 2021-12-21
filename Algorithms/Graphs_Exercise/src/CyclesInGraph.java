@@ -19,51 +19,60 @@ public class CyclesInGraph {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        String line;
+        String line = scanner.nextLine();
+
         String source = null;
 
-        while (!(line = scanner.nextLine()).equals("End")) {
+        while (!line.equals("End")) {
+
             String[] tokens = line.split("-");
 
-            if(source == null) {
+            if (source == null) {
                 source = tokens[0];
             }
+
             graph.putIfAbsent(tokens[0], new ArrayList<>());
+
             graph.get(tokens[0]).add(tokens[1]);
+
+            line = scanner.nextLine();
         }
 
         Set<String> visited = new HashSet<>();
         Set<String> cycles = new HashSet<>();
-        try {
-            dfs(source, visited, cycles);
-            System.out.println("Acyclic: Yes");
-        } catch (IllegalStateException e) {
-            System.out.println(e.getMessage());
-        }
+        String out = "";
 
+        try {
+            for (String s : graph.keySet()) {
+                if (!visited.contains(s)) {
+                    dfs(s, visited, cycles);
+                    out = "Acyclic: Yes";
+                }
+            }
+        } catch (IllegalStateException ex) {
+            out = ex.getMessage();
+        }
+        System.out.println(out);
     }
 
     private static void dfs(String source, Set<String> visited, Set<String> cycles) {
-        if(cycles.contains(source)) {
+        if (cycles.contains(source)) {
             throw new IllegalStateException("Acyclic: No");
         }
-        if(visited.contains(source)) {
+        if (visited.contains(source)) {
             return;
         }
+
         cycles.add(source);
         visited.add(source);
 
-        List<String> children = graph.get(source);
-
-        if(children == null) {
+        if (graph.get(source) == null) {
             return;
         }
-
-        for (String child : children) {
+        for (String child : graph.get(source)) {
             dfs(child, visited, cycles);
         }
 
         cycles.remove(source);
-
     }
 }
