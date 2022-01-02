@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class Fibonacci {
 
+    //Write a dynamic programming solution for finding nth Fibonacci member.
+
     public static double[] dp;
 
     public static void main(String[] args) {
@@ -19,7 +21,6 @@ public class Fibonacci {
         System.out.println(recursiveFib);
 
     }
-
 
     // using dynamic programming with recursion
     // top-down approach
