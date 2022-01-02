@@ -40,7 +40,7 @@ public class BinomialCoefficients {
 //        }
     }
 
-    
+
     private static long calcBinom(int n, int k) {
         if(k == 0 || k == n) {
             return 1;
