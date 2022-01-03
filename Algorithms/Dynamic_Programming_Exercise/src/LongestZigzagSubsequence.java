@@ -1,3 +1,6 @@
+import java.util.ArrayDeque;
+import java.util.Arrays;
+import java.util.Deque;
 import java.util.Scanner;
 
 public class LongestZigzagSubsequence {
@@ -15,5 +18,65 @@ public class LongestZigzagSubsequence {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
+        int[] numbers = Arrays.stream(scanner.nextLine().split("\\s+"))
+                .mapToInt(Integer::parseInt)
+                .toArray();
+
+        int[][] dp = new int[numbers.length + 1][2];
+        int[][] prev = new int[numbers.length + 1][2];
+
+        //Are greater
+        dp[0][0] = 1;
+        //Are lesser
+        dp[0][1] = 1;
+
+        prev[0][0] = -1;
+        prev[0][1] = -1;
+
+        int maxLength = 0;
+
+        int[] best = new int[2];
+
+        for (int currIndex = 0; currIndex < numbers.length; currIndex++) {
+            int currentNumber = numbers[currIndex];
+
+            for (int prevIndex = currIndex - 1; prevIndex >= 0; prevIndex--) {
+                int prevNumber = numbers[prevIndex];
+
+                if (currentNumber > prevNumber && dp[currIndex][0] <= dp[prevIndex][1] + 1) {
+                    dp[currIndex][0] = dp[prevIndex][1] + 1;
+                    prev[currIndex][0] = prevIndex;
+                }
+                if (currentNumber < prevNumber && dp[currIndex][1] <= dp[prevIndex][0] + 1) {
+                    dp[currIndex][1] = dp[prevIndex][0] + 1;
+                    prev[currIndex][1] = prevIndex;
+                }
+            }
+
+            if (maxLength < dp[currIndex][0]) {
+                maxLength = dp[currIndex][0];
+                best[0] = currIndex;
+                best[1] = 0;
+            } else if (maxLength < dp[currIndex][1]) {
+                maxLength = dp[currIndex][1];
+                best[0] = currIndex;
+                best[1] = 1;
+            }
+
+        }
+
+        Deque<Integer> zigZagSequence = new ArrayDeque<>();
+        int beginRow = best[0];
+
+        while (beginRow >= 0) {
+            zigZagSequence.push(numbers[beginRow]);
+
+            beginRow = prev[beginRow][best[1]];
+            best[1] = best[1] == 0 ? 1 : 0;
+        }
+        while (!zigZagSequence.isEmpty()) {
+            System.out.print(zigZagSequence.pop() + " ");
+        }
     }
 }
