@@ -32,7 +32,7 @@ public class CalculateTaxesMain {
         This will help to return true instance of employee (Full-Time, Part-Time or Intern).
         More in 'refactored'.
         */
-        
+
         TaxCalculator taxCalculator = new TaxCalculator();
 
         double totalTaxes = 0;
