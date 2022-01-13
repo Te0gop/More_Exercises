@@ -63,38 +63,5 @@ public abstract class Employee {
         return this.firstName + " " + this.lastName;
     }
 
-    /*
-    First step: This save method shouldn't be here and also has more than one responsibility.
-    So we have to move this method in EmployeeRepository.
-     */
-    public static void save(Employee employee){
-        // Second step: Move this logic into new method inside new class EmployeeFileSerializer
-        try {
-            StringBuilder sb = new StringBuilder();
-            sb.append("### EMPLOYEE RECORD ####");
-            sb.append(System.lineSeparator());
-            sb.append("NAME: ");
-            sb.append(employee.firstName + " " + employee.lastName);
-            sb.append(System.lineSeparator());
-            sb.append("POSITION: ");
-            sb.append(employee.getClass().getTypeName());
-            sb.append(System.lineSeparator());
-            sb.append("EMAIL: ");
-            sb.append(employee.getEmail());
-            sb.append(System.lineSeparator());
-            sb.append("MONTHLY WAGE: ");
-            sb.append(employee.monthlyIncome);
-            sb.append(System.lineSeparator());
 
-            Path path = Paths.get(employee.getFullName()
-                    .replace(" ","_") + ".rec");
-            Files.write(path, sb.toString().getBytes());
-
-            //Third step: Move this logic inside new class - ConsoleLogger
-
-            System.out.println("Saved employee " + employee.toString());
-        } catch (IOException e){
-            System.out.println("ERROR: Could not save employee. " + e);
-        }
-    }
 }
